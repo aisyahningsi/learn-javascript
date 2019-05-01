@@ -1,5 +1,5 @@
 1. Apa yang terjadi jika suatu variabel menggunakan let yang nilai awalnya bertipe data string, kemudian diganti nilainya jadi nilai yang bertipe data number?
-Jawaban: Terjadi error atau peringatan bahwa variabel tersebut tidak bisa mengubah tipe datanya.
+Jawaban: Terjadi perubahan nilai pada variabel tersebut, sesuai pendeklarasian terakhir.
 
 2. Apa yang terjadi jika suatu variabel menggunakan const yang nilai awalnya bertipe data boolean, kemudian diganti nilainya jadi nilai yang bertipe data number?
 Jawaban: Terjadi error atau peringatan bahwa variabel tersebut tidak bisa mengubah nilai datanya. 
