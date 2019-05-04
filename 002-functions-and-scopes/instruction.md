@@ -80,18 +80,26 @@ function add (firstNumber, secondNumber) {
   a. Apakah yang terjadi jika pengguna memanggil fungsi tersebut dengan `add(2)`? Apakah terjadi error seperti memanggil fungsi di swift?  
   b. Bagaimana caranya supaya fungsi `add` tersebut tetap memberikan nilai keluaran walaupun hanya menggunakan satu parameter, atau bahkan tidak menggunakan parameter sama sekali?
 
+### Update (4 Mei 2019)
+Revisi soal untuk pertanyaan 1 b
+```diff
+- Bagaimana caranya supaya fungsi `add` tersebut tetap memberikan nilai keluaran walaupun hanya menggunakan satu parameter, atau bahkan tidak menggunakan parameter sama sekali?
++ Bagaimana caranya supaya fungsi `add` tersebut tetap memberikan nilai keluaran walaupun hanya menggunakan satu parameter?
+
+```
+
 2. Diketahui sebuah kode sebagai berikut
 ```js
 let something = 'Hello'
-console.log('something value outside function before calling one: ', something)
+console.log('something value outside function before calling one: ', something) // kondisi i
 
 function simpleFunction () {
   let something = false
-  console.log('something value inside function: ', something)
+  console.log('something value inside function: ', something) // kondisi ii
 }
 
 simpleFunction()
-console.log('something value outside function after calling one: ', something)
+console.log('something value outside function after calling one: ', something) // kondisi iii
 ```
 a. Apakah nilai variabel `something` pada saat:  
   i. di luar fungsi, sebelum eksekusi fungsi `simpleFunction`  
@@ -99,3 +107,19 @@ a. Apakah nilai variabel `something` pada saat:
   iii di luar fungsi, setelah eksekusi fungsi `simpleFunction`  
 nilainya sama semua?  
 b. Berapa nilai variabel `something` di masing-masing tiga keadaan tersebut?
+### Update (4 Mei 2019)
+Revisi soal untuk pertanyaan 2 a
+```diff
+a. Apakah nilai variabel `something` pada saat:  
+	i. di luar fungsi, sebelum eksekusi fungsi `simpleFunction`  
+	ii. di dalam fungsi `simpleFunction`  
+	iii di luar fungsi, setelah eksekusi fungsi `simpleFunction`  
+- nilainya sama semua?  
++ yang ditampilkan menggunakan `console.log` nilainya sama semua?  
+```
+Revisi soal untuk pertanyaan 2 b
+```diff
+- Berapa nilai variabel `something` di masing-masing tiga keadaan tersebut?
++ Berapa nilai variabel `something` di masing-masing console?
+
+```
